@@ -1,6 +1,3 @@
-#Build FP to be picked by both system and vendor
-BUILD_FINGERPRINT := "xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA:user/release-keys"
-
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-threads=8 \
@@ -311,8 +308,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
     ro.surface_flinger.protected_contents=true \
-    ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
-    ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+    ro.surface_flinger.vsync_event_phase_offset_ns=4000000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=8000000
 
 #Storaged
  PRODUCT_PROPERTY_OVERRIDES += \
