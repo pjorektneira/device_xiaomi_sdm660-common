@@ -212,9 +212,9 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.9 \
     vendor.display.config@1.9_vendor
 
-# Doze
+# DeviceDoze
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    DeviceDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -605,6 +605,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# XiaomiParts
+# DeviceSettings
 PRODUCT_PACKAGES += \
-   XiaomiParts
+   DeviceSettings
