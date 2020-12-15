@@ -32,8 +32,6 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.RemoteException;
 import android.os.ServiceManager;
-import android.service.dreams.DreamService;
-import android.service.dreams.IDreamManager;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
@@ -58,8 +56,6 @@ public class FPSInfoService extends Service {
     private String mFps = null;
 
     private static final String MEASURED_FPS = "/sys/devices/virtual/graphics/fb0/measured_fps";
-
-    private IDreamManager mDreamManager;
 
     private class FPSView extends View {
         private Paint mOnlinePaint;
@@ -223,8 +219,6 @@ public class FPSInfoService extends Service {
 
         startThread();
 
-        mDreamManager = IDreamManager.Stub.asInterface(
-                ServiceManager.checkService(DreamService.DREAM_SERVICE));
         IntentFilter screenStateFilter = new IntentFilter(Intent.ACTION_SCREEN_ON);
         screenStateFilter.addAction(Intent.ACTION_SCREEN_OFF);
         registerReceiver(mScreenStateReceiver, screenStateFilter);
@@ -267,11 +261,9 @@ public class FPSInfoService extends Service {
         @Override
         public void onReceive(Context context, Intent intent) {
             if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
-                Log.d(TAG, "ACTION_SCREEN_ON " + isDozeMode());
-                if (!isDozeMode()) {
-                    startThread();
-                    mView.setVisibility(View.VISIBLE);
-                }
+                Log.d(TAG, "ACTION_SCREEN_ON ");
+                startThread();
+                mView.setVisibility(View.VISIBLE);
             } else if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
                 Log.d(TAG, "ACTION_SCREEN_OFF");
                 mView.setVisibility(View.GONE);
@@ -279,17 +271,6 @@ public class FPSInfoService extends Service {
             }
         }
     };
-
-    private boolean isDozeMode() {
-        try {
-            if (mDreamManager != null && mDreamManager.isDozing()) {
-                return true;
-            }
-        } catch (RemoteException e) {
-            return false;
-        }
-        return false;
-    }
 
     private void startThread() {
         Log.d(TAG, "started CurFPSThread");
