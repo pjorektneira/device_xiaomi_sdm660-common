@@ -150,7 +150,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
     ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000 \
-    ro.surface_flinger.protected_contents=true \
     ro.vendor.display.cabl=0 \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=1 \
