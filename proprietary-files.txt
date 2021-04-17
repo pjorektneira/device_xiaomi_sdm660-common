@@ -322,15 +322,13 @@ vendor/lib64/libmlipay@1.1.so|7d07b19faa36c62babf39a41b2baf8de370d706c
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|2c05d2902c757410aec30c6a5d0bf77b016583fa
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|0c4bb0c8ba1cbf357bb0b5117e93db0382ffcf49
 
-# Perf - from LA.UM.9.6.2.r1-03600-89xx.0
-vendor/lib/libqti-perfd-client.so|35c5fb10e0dfc1302460200f7757c3329eb42280
-vendor/lib64/libqti-perfd-client.so|cf1db630be11536a27a0ac66646c0024d78c80f7
-
-# Perf - From LA.UM.8.6.2.r1-08600-89xx.0
-vendor/lib64/libadaptlaunch.so|cf784401fc827e5195d595a6d855ec89ea8c22bf
-vendor/lib64/libappclassifier.so|d5956c2dc9344ddcca0e78d84c393320c2e0cc97
-vendor/lib64/libgameoptfeature.so|b135489d253f0a8d7884238fe7887eb85b87745d 
-vendor/lib64/liblearningmodule.so|a9390d0ef1ec82c97a61035ec686c1d094fdca98
+# Perf - from lge phoenix_sprout RKQ1.201123.002
+vendor/lib/libqti-perfd-client.so|537419862cb31be45731c9c90025ff8d20dd9afd
+vendor/lib64/libqti-perfd-client.so|6dffedf4dc21f898d08322893255a8594c9ac031
+vendor/lib64/libadaptlaunch.so|ab0c0545283ae165ad91fd8fdd9e87e14f660965
+vendor/lib64/libappclassifier.so|b78aa1e1557080bb537c3778535ea38d7d0c0d2a
+vendor/lib64/libgameoptfeature.so|d05d3851bf429587cb3baf3afe3692767f08d4b9
+vendor/lib64/liblearningmodule.so|435927680b8137f6c953d979be4aeb81cf8c9042
 
 # Peripheral manager - from jasmine
 vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
