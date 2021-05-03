@@ -325,8 +325,6 @@ vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|2c05d2902c757410aec30c6a5d0bf7
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|0c4bb0c8ba1cbf357bb0b5117e93db0382ffcf49
 
 # Perf - from lge phoenix_sprout RKQ1.201123.002
-vendor/lib/libqti-perfd-client.so|537419862cb31be45731c9c90025ff8d20dd9afd
-vendor/lib64/libqti-perfd-client.so|6dffedf4dc21f898d08322893255a8594c9ac031
 vendor/lib64/libadaptlaunch.so|ab0c0545283ae165ad91fd8fdd9e87e14f660965
 vendor/lib64/libappclassifier.so|b78aa1e1557080bb537c3778535ea38d7d0c0d2a
 vendor/lib64/libgameoptfeature.so|d05d3851bf429587cb3baf3afe3692767f08d4b9
