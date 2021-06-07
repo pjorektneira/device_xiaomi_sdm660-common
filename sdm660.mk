@@ -34,7 +34,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/qcom/media \
+    hardware/qcom/display \
+    hardware/qcom/audio
 
 # Permissions
 PRODUCT_COPY_FILES += \
