@@ -35,7 +35,11 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
+    $(DEVICE_PATH) \
+    hardware/gogle/pixel \
+    hardware/qcom-caf/msm8998-r/display \
+    hardware/qcom-caf/msm8998-r/audio \
+    hardware/qcom-caf/msm8998-r/media
 
 # Permissions
 PRODUCT_COPY_FILES += \
